@@ -11,7 +11,7 @@ export const TodoCounter: React.FC<ITodoCounterProps> = ({
 }) => {
   return (
     <h1 className="TodoCounter">
-        Has completado {completed} de {total} TODOS
+      {total === completed ? "Felicidades, completaste todas las tareas!!" : `Has completado ${completed} de ${total} TODOS`}
     </h1>
   )
 }

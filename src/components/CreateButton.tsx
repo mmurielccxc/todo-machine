@@ -1,6 +1,10 @@
 import './CreateButton.css';
 export const CreateButton = () => {
   return (
-    <button className="CreateTodoButton">+</button>
+    <button onClick={(event) => {
+      console.log('le diste click');
+      console.log(event)
+      console.log(event.target)
+    }} className="CreateTodoButton">+</button>
   )
 }
